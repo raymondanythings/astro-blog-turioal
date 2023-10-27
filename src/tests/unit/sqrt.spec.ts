@@ -1,5 +1,3 @@
-import { assert, expect, test } from "vitest";
-
 // Edit an assertion and save to see HMR in action
 
 test("Math.sqrt()", () => {
@@ -18,4 +16,10 @@ test("JSON", () => {
 
   expect(output).eq('{"foo":"hello","bar":"world"}');
   assert.deepEqual(JSON.parse(output), input, "matches original");
+});
+
+describe("테스트", () => {
+  it("통과", () => {
+    expect(1).toBe(1);
+  });
 });

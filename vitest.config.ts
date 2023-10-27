@@ -1,10 +1,10 @@
-/// <reference types="vitest" />
 import { getViteConfig } from "astro/config";
 
 export default getViteConfig({
   test: {
     /* for example, use global to avoid globals imports (describe, test, expect): */
-    // globals: true,
-    include: ["./src/tests/unit/**/*.{test,spec}.{js,ts,jsx,tsx}"],
+    dir: "./src/tests",
+    include: ["./unit/**/*.{test,spec}.{js,ts,jsx,tsx}"],
+    globals: true,
   },
 });
